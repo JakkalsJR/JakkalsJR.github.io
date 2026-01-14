@@ -637,3 +637,40 @@ font-weight: 700;
 .project-link:hover {
   text-decoration: underline;
 }
+
+/* Loader */
+.loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.loader span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #ff0000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+  animation: spin 1.2s linear infinite;
+}
+
+.loader span:nth-child(1) { transform: rotate(0deg) translate(25px); animation-delay: 0s; }
+.loader span:nth-child(2) { transform: rotate(30deg) translate(25px); animation-delay: 0.1s; }
+.loader span:nth-child(3) { transform: rotate(60deg) translate(25px); animation-delay: 0.2s; }
+.loader span:nth-child(4) { transform: rotate(90deg) translate(25px); animation-delay: 0.3s; }
+.loader span:nth-child(5) { transform: rotate(120deg) translate(25px); animation-delay: 0.4s; }
+.loader span:nth-child(6) { transform: rotate(150deg) translate(25px); animation-delay: 0.5s; }
+.loader span:nth-child(7) { transform: rotate(180deg) translate(25px); animation-delay: 0.6s; }
+.loader span:nth-child(8) { transform: rotate(210deg) translate(25px); animation-delay: 0.7s; }
+.loader span:nth-child(9) { transform: rotate(240deg) translate(25px); animation-delay: 0.8s; }
+.loader span:nth-child(10) { transform: rotate(270deg) translate(25px); animation-delay: 0.9s; }
+.loader span:nth-child(11) { transform: rotate(300deg) translate(25px); animation-delay: 1.0s; }
+.loader span:nth-child(12) { transform: rotate(330deg) translate(25px); animation-delay: 1.2s; }
+
+@keyframes spin {
+  0%   { opacity: 1; }
+  100% { opacity: 0.2; }
+}
